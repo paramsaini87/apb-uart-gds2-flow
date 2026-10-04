@@ -1,0 +1,4 @@
+registers: gold 391, gate 391, paired 391, unpaired gold 0, unpaired gate 0, reset-kind mismatches 0
+soundness guard: 23167 nets in the compared cones, 0 undriven non-input
+miter: 441 inputs, 953 compare outputs (36 PO, 391 register D, 391 register clock, 135 register reset)
+cuts: miter_gold.blif / miter_gate.blif, 953 named outputs each

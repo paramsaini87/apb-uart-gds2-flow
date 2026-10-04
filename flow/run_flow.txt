@@ -1,0 +1,9 @@
+load_sky130
+read_verilog rtl/apb_uart.v
+set_clock_period 15
+run_all 200 200
+write_netlist apb_uart_postpnr.v
+write_def apb_uart.def
+write_gds apb_uart.gds
+write_image images/04_final_layout.png routing
+exit

@@ -1,0 +1,47 @@
+[INFO ODB-0227] LEF file: /pdk/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 8 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: /work/apb_uart.def
+[INFO ODB-0128] Design: apb_uart
+[INFO ODB-0130]     Created 97 pins.
+[INFO ODB-0131]     Created 8886 components and 43046 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 32484 connections.
+[INFO ODB-0133]     Created 3265 nets and 10536 connections.
+[INFO ODB-0134] Finished DEF file: /work/apb_uart.def
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 3
+[INFO] Setting input delay to: 3
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5%
+=== GLOBAL 0.1 (correlation basis) ===
+Group                   Internal   Switching     Leakage       Total
+                           Power       Power       Power       Power (Watts)
+--------------------------------------------------------------------
+Sequential           1.12720e-03 6.76896e-05 3.82288e-09 1.19490e-03  42.1%
+Combinational        2.75184e-04 2.94399e-04 1.14576e-08 5.69595e-04  20.1%
+Clock                6.13090e-04 4.57747e-04 9.92500e-10 1.07084e-03  37.8%
+Macro                0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00   0.0%
+Pad                  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00   0.0%
+--------------------------------------------------------------------
+Total                2.01548e-03 8.19835e-04 1.62729e-08 2.83533e-03 100.0%
+                           71.1%       28.9%        0.0%
+=== INPUT 0.1 PROPAGATED (non-converging iteration; not a correlation basis) ===
+Group                   Internal   Switching     Leakage       Total
+                           Power       Power       Power       Power (Watts)
+--------------------------------------------------------------------
+Sequential           1.55462e-03 5.62232e-04 3.89860e-09 2.11686e-03  32.1%
+Combinational        1.87918e-03 1.52387e-03 1.24718e-08 3.40307e-03  51.7%
+Clock                6.12016e-04 4.56048e-04 9.92496e-10 1.06806e-03  16.2%
+Macro                0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00   0.0%
+Pad                  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00   0.0%
+--------------------------------------------------------------------
+Total                4.04582e-03 2.54215e-03 1.73629e-08 6.58799e-03 100.0%
+                           61.4%       38.6%        0.0%

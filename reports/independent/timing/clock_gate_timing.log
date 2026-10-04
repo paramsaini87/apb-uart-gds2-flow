@@ -1,0 +1,38 @@
+[INFO ODB-0227] LEF file: /pdk/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 8 library cells
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /pdk/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+[INFO ODB-0127] Reading DEF file: /work/apb_uart.def
+[INFO ODB-0128] Design: apb_uart
+[INFO ODB-0130]     Created 97 pins.
+[INFO ODB-0131]     Created 8886 components and 43046 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 32484 connections.
+[INFO ODB-0133]     Created 3265 nets and 10536 connections.
+[INFO ODB-0134] Finished DEF file: /work/apb_uart.def
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 3
+[INFO] Setting input delay to: 3
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.15
+[INFO] Setting timing derate to: 5%
+ICGT-LATCH HICG_L0_0_latch
+max_delay/setup group clk
+
+                                     Required  Actual
+Endpoint                               Delay   Delay   Slack
+------------------------------------------------------------
+HICG_L0_0_latch/D (sky130_fd_sc_hd__dlxtp_1)    8.39    7.64    0.75 (MET)
+
+min_delay/hold group clk
+
+                                     Required  Actual
+Endpoint                               Delay   Delay   Slack
+------------------------------------------------------------
+HICG_L0_0_latch/D (sky130_fd_sc_hd__dlxtp_1)    1.56    4.18    2.63 (MET)
+
