@@ -1,51 +1,51 @@
 ======== ABC command line "read_blif miter.blif; strash; print_stats; iprove -v"
 Warning: Constant-0 drivers added to 4 non-driven nets in network "miter":
 G:$techmap$add$/w/rtl.v:207$41.$auto$alumacc.cc:512:replace_alu$2196.CO[4], G:$techmap$add$/w/rtl.v:317$65.$auto$alumacc.cc:512:replace_alu$2196.CO[4], G:$techmap$add$/w/rtl.v:405$104.$auto$alumacc.cc:512:replace_alu$2196.CO[4], G:$techmap$add$/w/rtl.v:432$113.$auto$alumacc.cc:512:replace_alu$2196.CO[4] ...
-[1;37mmiter                         :[0m i/o =  441/  953  lat =    0  and =  10663  lev = 28
+[1;37mmiter                         :[0m i/o =  441/  953  lat =    0  and =  10017  lev = 28
 RESOURCE LIMITS: Iterations = 6. Rewriting = no. Fraiging = yes.
 Miter = 5000 (2.0).  Rwr = 3 (1.0).  Fraig = 2 (8.0).  Last = 0.
 ITERATION  1 : Confs =   5000. FraigBTL =   2. 
-SimWords = 32. Rounds = 34. Mem = 0.66 MB.  Classes: Beg = 383. End = 384.
-Proof = 191. Counter-example = 1. Fail = 832. FailReal = 50. Zero = 636.
-Final = 1981. Miter = 3844. Total = 4052. Mux = 0. (Exor = 0.) SatVars = 2529.
-starts        :              194
-conflicts     :             1148
-decisions     :             8275
-propagations  :           152999
-AIG simulation   =     0.01 sec
-AIG traversal    =     0.00 sec
-SAT solving      =     0.01 sec
-    Unsat        =     0.01 sec
-    Sat          =     0.00 sec
-    Fail         =     0.00 sec
-Class refining   =     0.00 sec
-TOTAL RUNTIME    =     0.06 sec
-Nodes =    1981.  Levels =   23.  Fraiging    =     0.07 sec
-ITERATION  2 : Confs =  10000. FraigBTL =  16. 
-SimWords = 32. Rounds = 19. Mem = 0.41 MB.  Classes: Beg = 58. End = 61.
-Proof = 39. Counter-example = 11. Fail = 53. FailReal = 67. Zero = 109.
-Final = 442. Miter = 1926. Total = 1981. Mux = 0. (Exor = 0.) SatVars = 1557.
-starts        :              123
-conflicts     :              967
-decisions     :             9171
-propagations  :            94973
+SimWords = 32. Rounds = 27. Mem = 0.54 MB.  Classes: Beg = 105. End = 107.
+Proof = 61. Counter-example = 15. Fail = 104. FailReal = 48. Zero = 315.
+Final = 1983. Miter = 2743. Total = 3029. Mux = 0. (Exor = 0.) SatVars = 1876.
+starts        :               96
+conflicts     :              386
+decisions     :            13280
+propagations  :            69971
 AIG simulation   =     0.00 sec
 AIG traversal    =     0.00 sec
 SAT solving      =     0.01 sec
     Unsat        =     0.00 sec
     Sat          =     0.00 sec
-    Fail         =     0.01 sec
+    Fail         =     0.00 sec
 Class refining   =     0.00 sec
 TOTAL RUNTIME    =     0.03 sec
-Nodes =     442.  Levels =   20.  Fraiging    =     0.03 sec
+Nodes =    1983.  Levels =   21.  Fraiging    =     0.03 sec
+ITERATION  2 : Confs =  10000. FraigBTL =  16. 
+SimWords = 32. Rounds = 9. Mem = 0.41 MB.  Classes: Beg = 41. End = 42.
+Proof = 47. Counter-example = 1. Fail = 43. FailReal = 43. Zero = 70.
+Final = 299. Miter = 1942. Total = 1983. Mux = 0. (Exor = 0.) SatVars = 1611.
+starts        :               95
+conflicts     :              845
+decisions     :             5050
+propagations  :            73739
+AIG simulation   =     0.00 sec
+AIG traversal    =     0.00 sec
+SAT solving      =     0.01 sec
+    Unsat        =     0.00 sec
+    Sat          =     0.00 sec
+    Fail         =     0.00 sec
+Class refining   =     0.00 sec
+TOTAL RUNTIME    =     0.02 sec
+Nodes =     299.  Levels =   17.  Fraiging    =     0.02 sec
 ITERATION  3 : Confs =  20000. FraigBTL = 128. 
-SimWords = 32. Rounds = 5. Mem = 0.22 MB.  Classes: Beg = 8. End = 7.
-Proof = 6. Counter-example = 1. Fail = 0. FailReal = 0. Zero = 10.
-Final = 0. Miter = 433. Total = 442. Mux = 0. (Exor = 0.) SatVars = 372.
-starts        :               13
-conflicts     :              164
-decisions     :             3576
-propagations  :             8051
+SimWords = 32. Rounds = 5. Mem = 0.21 MB.  Classes: Beg = 6. End = 4.
+Proof = 3. Counter-example = 1. Fail = 0. FailReal = 0. Zero = 8.
+Final = 0. Miter = 293. Total = 299. Mux = 0. (Exor = 0.) SatVars = 238.
+starts        :                7
+conflicts     :              103
+decisions     :             3234
+propagations  :             5088
 AIG simulation   =     0.00 sec
 AIG traversal    =     0.00 sec
 SAT solving      =     0.00 sec
@@ -53,6 +53,6 @@ SAT solving      =     0.00 sec
     Sat          =     0.00 sec
     Fail         =     0.00 sec
 Class refining   =     0.00 sec
-TOTAL RUNTIME    =     0.01 sec
-Nodes =       0.  Levels =    0.  Fraiging    =     0.01 sec
-UNSATISFIABLE  Time =     0.89 sec
+TOTAL RUNTIME    =     0.00 sec
+Nodes =       0.  Levels =    0.  Fraiging    =     0.00 sec
+UNSATISFIABLE  Time =     0.75 sec

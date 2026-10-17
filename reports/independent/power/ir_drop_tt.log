@@ -10,9 +10,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky13
 [INFO ODB-0127] Reading DEF file: /work/apb_uart.def
 [INFO ODB-0128] Design: apb_uart
 [INFO ODB-0130]     Created 97 pins.
-[INFO ODB-0131]     Created 8886 components and 43046 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 32484 connections.
-[INFO ODB-0133]     Created 3265 nets and 10536 connections.
+[INFO ODB-0131]     Created 5995 components and 29236 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 21656 connections.
+[INFO ODB-0133]     Created 2134 nets and 7554 connections.
 [INFO ODB-0134] Finished DEF file: /work/apb_uart.def
 [INFO] Using clock clk…
 [INFO] Setting output delay to: 3
@@ -24,35 +24,35 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky13
 Group                   Internal   Switching     Leakage       Total
                            Power       Power       Power       Power (Watts)
 --------------------------------------------------------------------
-Sequential           1.12720e-03 6.76896e-05 3.82288e-09 1.19490e-03  42.1%
-Combinational        2.75184e-04 2.94399e-04 1.14576e-08 5.69595e-04  20.1%
-Clock                6.13090e-04 4.57747e-04 9.92500e-10 1.07084e-03  37.8%
+Sequential           1.21085e-03 5.81987e-05 4.55611e-09 1.26906e-03  48.8%
+Combinational        1.85803e-04 1.99596e-04 6.13825e-09 3.85405e-04  14.8%
+Clock                4.98851e-04 4.49798e-04 8.25334e-10 9.48650e-04  36.4%
 Macro                0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00   0.0%
 Pad                  0.00000e+00 0.00000e+00 0.00000e+00 0.00000e+00   0.0%
 --------------------------------------------------------------------
-Total                2.01548e-03 8.19835e-04 1.62729e-08 2.83533e-03 100.0%
-                           71.1%       28.9%        0.0%
+Total                1.89551e-03 7.07593e-04 1.15196e-08 2.60311e-03 100.0%
+                           72.8%       27.2%        0.0%
 [INFO PSM-0040] All shapes on net VPWR are connected.
 ########## IR report #################
 Net              : VPWR
 Corner           : tt_025C_1v80
-Total power      : 2.84e-03 W
+Total power      : 2.60e-03 W
 Supply voltage   : 1.80e+00 V
 Worstcase voltage: 1.80e+00 V
 Average voltage  : 1.80e+00 V
-Average IR drop  : 1.67e-04 V
-Worstcase IR drop: 5.45e-04 V
+Average IR drop  : 1.65e-04 V
+Worstcase IR drop: 5.02e-04 V
 Percentage drop  : 0.03 %
 ######################################
 [INFO PSM-0040] All shapes on net VGND are connected.
 ########## IR report #################
 Net              : VGND
 Corner           : tt_025C_1v80
-Total power      : 2.84e-03 W
+Total power      : 2.60e-03 W
 Supply voltage   : 0.00e+00 V
-Worstcase voltage: 4.05e-04 V
-Average voltage  : 1.52e-04 V
-Average IR drop  : 1.52e-04 V
-Worstcase IR drop: 4.05e-04 V
-Percentage drop  : 0.02 %
+Worstcase voltage: 7.48e-04 V
+Average voltage  : 2.63e-04 V
+Average IR drop  : 2.63e-04 V
+Worstcase IR drop: 7.48e-04 V
+Percentage drop  : 0.04 %
 ######################################

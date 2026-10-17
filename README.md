@@ -9,10 +9,10 @@ A 16550-compatible UART with an APB3 slave interface: 16-byte TX and RX FIFOs, p
 | Check (on the shipped layout) | IndepthSilicon | Independent tool |
 |---|---:|---:|
 | Design-rule check | **0** violations | **0** — SKY130 foundry rule deck |
-| Layout vs schematic | **match** (3,296 / 3,296 nets) | **match** — 3,248 devices |
+| Layout vs schematic | **match** (2,165 / 2,165 nets) | **match** — 2,116 devices |
 | Antenna | **0** | **0** nets, **0** pins |
-| Setup timing, 3 corners | **met** (worst 0.700 ns) | **met** (worst 0.750 ns) |
-| Hold timing, 3 corners | **met** (worst 0.087 ns) | **met** (worst 0.079 ns) |
+| Setup timing, 3 corners | **met** (worst 1.515 ns) | **met** (worst 1.524 ns) |
+| Hold timing, 3 corners | **met** (worst 0.100 ns) | **met** (worst 0.097 ns) |
 | Max slew / capacitance / fanout | **0 / 0 / 0** | **0 / 0 / 0** |
 | Shipped netlist equal to RTL | **proven** (435 / 435 compare points) | **proven** (953 compare points) |
 
@@ -35,36 +35,36 @@ Three columns, for the same RTL and the same 15 ns clock:
 
 | Stage | Metric | IndepthSilicon | Independent tool | Reference flow |
 |---|---|---:|---:|---:|
-| RTL read-in | gates / registers after elaboration | 4,523 / 399 | — | — |
-| Synthesis | mapped cells | 2,236 | — | 1,350 |
-| Synthesis | cell area (µm²) | 25,062 | — | 18,460 |
+| RTL read-in | gates / registers after elaboration | 4,370 / 399 | — | — |
+| Synthesis | mapped cells | 1,492 | — | 1,350 |
+| Synthesis | cell area (µm²) | 19,654 | — | 18,460 |
 | Synthesis | registers | 399 | — | 395 |
 | Synthesis check | netlist equal to RTL (compare points) | 435 / 435 proven | — | not checked |
 | Test insertion | scan chains / registers on chain | 4 / 399 | — | not inserted |
-| Test insertion | stuck-at fault coverage (test coverage) | 97.18 % (99.78 %), 149 patterns | — | — |
-| Floorplan | die size (µm) | 244.8 × 244.8 | — | 225.9 × 236.6 |
-| Floorplan | die area (µm²) | 59,927 | — | 53,436 |
+| Test insertion | stuck-at fault coverage (test coverage) | 95.92 % (99.66 %), 143 patterns | — | — |
+| Floorplan | die size (µm) | 213.6 × 213.6 | — | 225.9 × 236.6 |
+| Floorplan | die area (µm²) | 45,625 | — | 53,436 |
 | Clock tree | clock buffers | 58 | — | 68 |
-| Routing | signal nets routed | 3,265 | — | 1,919 |
-| Routing | routed signal wirelength (µm) ¹ | 82,283 | — | 54,326 |
-| Routing | vias ¹ | 22,398 | — | 14,892 |
-| Routing | antenna diodes inserted | 1 | — | 1,071 |
-| Final netlist | logic cells (no fill, tap or diode) | 3,242 | — | 1,893 |
+| Routing | signal nets routed | 2,134 | — | 1,919 |
+| Routing | routed signal wirelength (µm) ¹ | 62,126 | — | 54,326 |
+| Routing | vias ¹ | 16,688 | — | 14,892 |
+| Routing | antenna diodes inserted | 0 | — | 1,071 |
+| Final netlist | logic cells (no fill, tap or diode) | 2,110 | — | 1,893 |
 | Physical verification | DRC violations | **0** | **0** (foundry deck) | 0 |
-| Physical verification | LVS | **match** | **match** (3,248 = 3,248 devices) | 0 errors |
+| Physical verification | LVS | **match** | **match** (2,116 = 2,116 devices) | 0 errors |
 | Physical verification | antenna violations | **0** | **0** nets / **0** pins | 0 |
 | Physical verification | netlist ↔ layout connections missing / extra | — | **0 / 0** | — |
 | Physical verification | undriven / multiply-driven nets | — | **0 / 0** | — |
-| Timing — typical, 25 °C, 1.80 V | setup worst slack (ns) ² | **2.461** | **2.487** | 6.071 |
-| Timing — slow, 100 °C, 1.60 V | setup worst slack (ns) ² | **0.700** | **0.750** | 1.939 |
-| Timing — fast, −40 °C, 1.95 V | setup worst slack (ns) ² | **3.106** | **3.124** | 7.063 |
-| Timing — typical, 25 °C, 1.80 V | hold worst slack (ns) | **0.282** | **0.271** | 0.316 |
-| Timing — slow, 100 °C, 1.60 V | hold worst slack (ns) | **0.821** | **0.801** | 0.888 |
-| Timing — fast, −40 °C, 1.95 V | hold worst slack (ns) | **0.087** | **0.079** | 0.109 |
+| Timing — typical, 25 °C, 1.80 V | setup worst slack (ns) ² | **3.139** | **3.155** | 6.071 |
+| Timing — slow, 100 °C, 1.60 V | setup worst slack (ns) ² | **1.515** | **1.524** | 1.939 |
+| Timing — fast, −40 °C, 1.95 V | setup worst slack (ns) ² | **3.532** | **3.542** | 7.063 |
+| Timing — typical, 25 °C, 1.80 V | hold worst slack (ns) | **0.294** | **0.294** | 0.316 |
+| Timing — slow, 100 °C, 1.60 V | hold worst slack (ns) | **0.760** | **0.760** | 0.888 |
+| Timing — fast, −40 °C, 1.95 V | hold worst slack (ns) | **0.100** | **0.097** | 0.109 |
 | Timing | max slew / capacitance / fanout violations | **0 / 0 / 0** | **0 / 0 / 0** | 782 / 0 / 111 |
-| Timing | clock-gate enable paths: gates / unconstrained / worst setup (ns) | — | 1 / 0 / 0.75 | — |
-| Power | total, typical corner (mW) ³ | 2.835 | 2.835 | 2.854 |
-| Power | worst IR drop VPWR / VGND (mV) ³ | 0.557 / 0.414 | 0.545 / 0.405 | 0.202 |
+| Timing | clock-gate enable paths: gates / unconstrained / worst setup (ns) | — | 1 / 0 / 1.52 | — |
+| Power | total, typical corner (mW) ³ | 2.594 | 2.603 | 2.854 |
+| Power | worst IR drop VPWR / VGND (mV) ³ | 0.511 / 0.755 | 0.502 / 0.748 | 0.202 |
 | Sign-off | shipped netlist equal to RTL | **proven** 435 / 435 | **proven** — 391 registers paired, 953 compare points | not checked |
 
 ¹ Measured from each flow's DEF the same way (signal nets only, power and ground excluded); the same script reproduces the reference flow's own reported wirelength to within 1 µm.
@@ -75,8 +75,8 @@ Three columns, for the same RTL and the same 15 ns clock:
 
 ### Reading the comparison
 
-* **Synthesis.** IndepthSilicon maps this design to 66 % more cells than the reference flow (36 % more cell area).
-* **Routing.** It routes 51 % more signal wire over 70 % more nets. Part of the difference is the 4 scan chains IndepthSilicon inserts for manufacturing test, which the reference flow does not; the dies also differ in size.
+* **Synthesis.** IndepthSilicon maps this design to 10.5 % more cells than the reference flow (6.5 % more cell area).
+* **Routing.** It routes 14 % more signal wire over 11 % more nets. Part of the difference is the 4 scan chains IndepthSilicon inserts for manufacturing test, which the reference flow does not; the dies also differ in size.
 * **Timing.** Both flows meet setup and hold at 15 ns; the reference flow has more slack on this design, and leaves 782 slew, 0 capacitance and 111 fanout violations, where IndepthSilicon leaves none and the independent timer agrees.
 * **Verification.** IndepthSilicon proves its shipped netlist equal to the RTL inside the flow, and an independent equivalence checker proves the same; the reference flow runs no equivalence check.
 

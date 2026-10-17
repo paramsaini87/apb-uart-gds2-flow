@@ -10,9 +10,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/lef/sky130_fd_
 [INFO ODB-0127] Reading DEF file: /work/apb_uart.def
 [INFO ODB-0128] Design: apb_uart
 [INFO ODB-0130]     Created 97 pins.
-[INFO ODB-0131]     Created 8886 components and 43046 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 32484 connections.
-[INFO ODB-0133]     Created 3265 nets and 10536 connections.
+[INFO ODB-0131]     Created 5995 components and 29236 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 21656 connections.
+[INFO ODB-0133]     Created 2134 nets and 7554 connections.
 [INFO ODB-0134] Finished DEF file: /work/apb_uart.def
 [INFO ANT-0002] Found 0 net violations.
 [INFO ANT-0001] Found 0 pin violations.

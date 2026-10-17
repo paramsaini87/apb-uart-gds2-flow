@@ -10,9 +10,9 @@ The NOWIREEXTENSIONATPIN statement will be ignored. See file /pdk/libs.ref/sky13
 [INFO ODB-0127] Reading DEF file: /work/apb_uart.def
 [INFO ODB-0128] Design: apb_uart
 [INFO ODB-0130]     Created 97 pins.
-[INFO ODB-0131]     Created 8886 components and 43046 component-terminals.
-[INFO ODB-0132]     Created 2 special nets and 32484 connections.
-[INFO ODB-0133]     Created 3265 nets and 10536 connections.
+[INFO ODB-0131]     Created 5995 components and 29236 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 21656 connections.
+[INFO ODB-0133]     Created 2134 nets and 7554 connections.
 [INFO ODB-0134] Finished DEF file: /work/apb_uart.def
 [INFO] Using clock clk…
 [INFO] Setting output delay to: 3
@@ -27,12 +27,12 @@ max_delay/setup group clk
                                      Required  Actual
 Endpoint                               Delay   Delay   Slack
 ------------------------------------------------------------
-HICG_L0_0_latch/D (sky130_fd_sc_hd__dlxtp_1)    8.39    7.64    0.75 (MET)
+HICG_L0_0_latch/D (sky130_fd_sc_hd__dlxtp_1)    8.46    6.94    1.52 (MET)
 
 min_delay/hold group clk
 
                                      Required  Actual
 Endpoint                               Delay   Delay   Slack
 ------------------------------------------------------------
-HICG_L0_0_latch/D (sky130_fd_sc_hd__dlxtp_1)    1.56    4.18    2.63 (MET)
+HICG_L0_0_latch/D (sky130_fd_sc_hd__dlxtp_1)    1.54    4.17    2.63 (MET)
 
